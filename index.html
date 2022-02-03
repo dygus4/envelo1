@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --bg-color: red;
+        }
+        body {
+            background-color: var(bg-color);
+            font-family: Lato;
+        }
+        div {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        } 
+        .hero {
+            border: 1px solid black;
+        }
+           </style>
+</head>
+<body>
+	<div class="container">
+        <div>
+            <h1>Witaj w envelo</h1>
+        </div>
+        <h1 aria-main="true">Hall od fame</h1>
+        <div className="hero"> 
+            <h1>hero count: {heroCount}</h1>
+        </div>
+        <button onclick="Hero.train()">Power up hero</button>
+	</div>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
